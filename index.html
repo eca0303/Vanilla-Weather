@@ -12,7 +12,14 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Vanilla Weather</title>
 </head>
-
+<style>
+     #humidity {
+            color: #885df1; 
+        }
+        #wind-speed {
+            color: #885df1;
+        }
+</style>
 <body>
     <div class="weather-app">
         <header>
@@ -35,9 +42,10 @@
                     </p>
                 </div>
                 <div class="weather-app-temperature-container"></div>
-                 <div class="weather-app-icon">
-                 <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png" alt="Weather Icon">
-                    </div>
+                <div class="weather-app-icon">
+                    <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+                        alt="Weather Icon">
+                </div>
                 <div class="weather-app-temperature" id="temperature">22</div>
                 <div class="weather-app-unit">°C</div>
             </div>
