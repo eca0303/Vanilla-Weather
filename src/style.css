@@ -1,6 +1,7 @@
 body {
     background: linear-gradient(106.7deg, rgb(245, 167, 191) -6.2%, rgb(201, 218, 238) 46.4%, rgb(164, 240, 229) 86.4%);
     font-family: "Roboto", serif;
+    background-attachment: fixed;
 }
 a {
     color: #885df1;
@@ -73,12 +74,21 @@ header {
     font-size: 28px;
 }
 
+
 .weather-forecast {
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
+    gap: 15px;
+    padding: 10px;
+    white-space: nowrap;
 }
-
+.weather-forecast-day {
+    background: #f8f9fa;
+    padding: 6px;
+    border-radius: 10px;
+    min-width: 100px;
+    text-align: center;
+}
 .weather-forecast-date {
     text-align: center;
     color: rgba(39, 33, 66, 0.4);
@@ -103,9 +113,30 @@ header {
 }
 
 .weather-forecast-temperature {
+    text-align: center;
+    color: #f65282;
+    display: flex;
+    justify-content: center;
+}
+.weather-forecast-temperature {
     padding: 0 10px;
 }
 
+.weather-forecast-date {
+    text-align: center;
+    color: rgba(39, 33, 66, 0.4);
+    font-size: 16px;
+    line-height: 20px;
+}
+.weather-forecast{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.weather-forecast-icon{
+    font-size: 38px;
+    text-align: center ;
+}
 footer {
     border-top: 1px solid #f9f7fe;
     padding: 30px 0 0 0;
